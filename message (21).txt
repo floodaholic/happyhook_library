@@ -1,8 +1,4 @@
 
-local getgenv = getgenv or function()
-	return getfenv(2)
-end
-
 local InputService = game:GetService('UserInputService');
 local TextService = game:GetService('TextService');
 local CoreGui = game:GetService('CoreGui');
@@ -3852,4 +3848,5 @@ Players.PlayerAdded:Connect(OnPlayerChange);
 Players.PlayerRemoving:Connect(OnPlayerChange);
 
 getgenv().Library = Library
+
 return { Library, Toggles, Options }
